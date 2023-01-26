@@ -1,0 +1,170 @@
+body
+{
+    height: 1500px; 
+    width: 1500px;
+ background-image: url(https://cdn.discordapp.com/attachments/1035165993552597022/1042807947203452988/image.png); /*Image de Background*/
+ background-repeat: no-repeat; /*Empêche l'image de Background de se répéter*/
+ background-size: cover;
+ flex-direction: column;
+    display: flex;
+    align-content: space-between;
+}
+
+#NPC{
+
+ display: flex;
+ align-items: center;
+ align-content: space-between; /*Créer un espacement entre chaque ennemis/héros */
+
+
+}
+
+#monstres{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; 
+}
+
+
+#Boss{
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
+#héros{
+
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+    
+
+#TextLich{
+
+    display: flex;
+    
+    
+    height: 20px; 
+    width: 150px;
+    font-size: 1.4em;
+}
+
+#TextSkeleton1{
+
+    display: flex;
+    
+    height: 20px; 
+    width: 80px;
+}
+
+#TextSkeleton2{
+
+    display: flex;
+    
+    height: 20px; 
+    width: 80px;
+}
+
+
+#Text3{
+  
+    display: flex;
+   background-color: brown;
+   border-style:solid;
+   border-width: 5px;
+   height: 200px; 
+   width: 200px;
+   flex-direction: column;
+}
+
+
+
+#Menu{
+
+    display: flex;
+   height: 150px; 
+   width: 1000px;
+   justify-content: center;
+}
+
+
+
+#Menu{
+
+    background-image: url(https://cdn.discordapp.com/attachments/1035165993552597022/1047178715026685962/Sprite-0008.png); /*Image pour la boite de dialogue (libre de droit)*/
+    display: flex;
+   border-width: 5px;
+   height: 275px; 
+   width: 845px;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+#espace1{
+
+    height: 275px; 
+    width: 30px;
+}
+
+#espace2{
+
+    height: 275px; 
+    width: 50px;
+}
+
+#espace3{
+
+    height: 275px; 
+    width: 30px;
+}
+
+#Dialogue{
+
+    flex-direction: column;
+    height: 275px; 
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+#placeholder{
+    
+    flex-direction: column;
+    height: 275px; 
+    width: 400px;
+    display: flex;
+    justify-content: flex-end;
+    justify-content: center;
+}
+
+#DegatAttaque{
+
+    font-size: 1.4em;
+    color: brown;
+}
+
+#TourJoueur{
+
+    font-size: 1.4em;
+    color: brown;
+}
+
+#ATTAQUEMonstre{
+
+    font-size: 1.4em;
+
+ color: brown;
+
+}

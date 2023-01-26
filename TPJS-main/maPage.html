@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>La Liche !</title> <!--Titre de la page-->
+        <meta charset="utf-8" />
+        <link href="styles.css" media="all" rel="stylesheet" type="text/css" /> <!--Nom du css-->
+        <script src="monScript.js" async></script> <!--Nom du JavaScript-->
+    </head>
+    <body>
+        
+        
+        
+
+
+
+   
+
+       
+
+
+
+
+        <div id="NPC"> <!--Div qui gère les ennemis et les héros-->
+
+
+
+            <div id ="monstres">  <!--Les ennemis-->
+                
+                <div id="Boss"> <!--La Liche-->
+                    <div id="TitreLich">
+                        <div id="Liche">Liche</div>
+                    </div>
+                    <img id="ImgLich" src="https://cdn.discordapp.com/attachments/1035165993552597022/1042828796560158750/Sprite-0001.png" alt="Lich" height="500">
+                    <!--Attaque une image à la liche, ainsi qu'une ID et une taille à cette image-->
+                    <div id="TextLich">
+                        <div id="Vie0">Vie </div> <!--Affiche la vie de la Liche-->
+                        <progress id="JaugeVieLiche" max="100" value="100"></progress> <!--Affiche la vie sous forme de jauge intéractive-->
+                        <div id="VieLiche">150</div> <!--Vie total de la Liche-->
+                    </div>
+                </div>
+                 
+            
+                
+                <div id="trashmob"> <!--Ennemis secondaires-->
+                    <div id="Skeleton1"> 
+                        <img id="ImgSkeleton1" src="https://cdn.discordapp.com/attachments/1035165993552597022/1047164899744301076/Sprite-0003.png" height="200">
+                         <!--Image du squelette, ID et dimenssions-->
+                        <div id="TextSkeleton1">
+                            <div id="Vie0">Vie </div>
+                            <progress id="JaugeVieSkeleton1" max="100" value="100"></progress> <!--Affiche la vie sous forme de jauge intéractive-->
+                            <div id="VieMonstre">100</div>
+                        </div>
+                    </div>
+        
+                    <div id="Skeleton2">
+                        <img id="ImgSkeleton2" src="https://cdn.discordapp.com/attachments/1035165993552597022/1047164899744301076/Sprite-0003.png" height="200">
+                        <div id="TextSkeleton2">
+                            <div id="Vie0">Vie </div>
+                            <progress id="JaugeVieSkeleton2" max="100" value="100"></progress> <!--Affiche la vie sous forme de jauge intéractive-->
+                            <div id="VieMonstre">100</div>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            <div id ="héros">
+                <div id="Sorcier">
+                    <img id="ImgMage" src="https://cdn.discordapp.com/attachments/1035165993552597022/1047168077894275143/Sprite-0005.png" height="300">
+                    <!--Image du Mage, ID et dimenssions-->
+                    <div id="Text3" >
+                        <div id="boitestat3">
+                            <div id="Vie"> Vie </div>
+                            <progress id="JaugeVie1" max="100" value="100"></progress> <!--Affiche la vie sous forme de jauge intéractive-->
+                         <div id="VieMage">100</div>
+
+                         <div id="Mana1"> Mana</div>
+                         <progress id="JaugeMana1" max="100" value="100"></progress> <!--Affiche le mana sous forme de jauge intéractive-->
+                         <div id="ManaMage">100</div>
+
+                        </div>
+                        <div id="boite2.3">
+                            <div id="Actions">
+                            
+                                <div id="ATTAQUE1">ATTAQUE</div> <!--Texte intéractif qui déclenche la fonction ATTAQUE-->
+                                <div id="DEFENSE1">DEFENSE</div> <!--Texte intéractif qui déclenche la fonction DEFENSE (WP)-->
+                                <div id="BOULEDEFEU">BOULE DE FEU</div> <!--Texte intéractif qui déclenche la fonction BOULEDEFEU-->
+    
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                
+                <div id="Ranger">
+                    <img id="ImgRanger" src="https://cdn.discordapp.com/attachments/1035165993552597022/1047170789063020544/Sprite-0007.png" height="200">
+                    <!--Image du Ranger, ID et dimenssions-->
+                    <div id="Text3" >
+                        <div id="boitestat3">
+                            <div id="Vie"> Vie </div>
+                            <progress id="JaugeVie2" max="100" value="100"></progress> <!--Affiche la vie sous forme de jauge intéractive-->
+                         <div id="VieRanger">100</div>
+
+                         <div id="Mana2"> Mana</div>
+                         <progress id="JaugeMana" max="100" value="100"></progress> <!--Affiche le mana sous forme de jauge intéractive-->
+                         <div id="ManaRanger">100</div>
+                        </div>
+                        <div id="boite2.3">
+                            <div id="Actions">
+                            
+                                <div id="ATTAQUE2">ATTAQUE</div> <!--Texte intéractif qui déclenche la fonction ATTAQUE-->
+                                <div id="DEFENSE2">DEFENSE</div> <!--Texte intéractif qui déclenche la fonction DEFENSE (WP)-->
+                                <div id="TIRPUISSANT">TIR PUISSANT</div> <!--Texte intéractif qui déclenche la fonction TIRPUISSANT-->
+    
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                
+                <div id="guerrier">
+                    <img id="ImgGuerrier" src="https://cdn.discordapp.com/attachments/1035165993552597022/1042830552828481586/Halberdier.png" alt="Guerrier" height="200">
+                     <!--Image du Guerrier, ID et dimenssions-->
+                    <div id="Text3" >
+                        <div id="boitestat3">
+                            <div id="Vie"> Vie </div>
+                            <progress id="JaugeVie3" max="100" value="100"></progress> <!--Affiche la vie sous forme de jauge intéractive-->
+                         <div id="VieGuerrier">100</div>
+
+                         <div id="Mana3"> Mana</div>
+                         <progress id="JaugeMana3" max="100" value="100"></progress> <!--Affiche le mana sous forme de jauge intéractive-->
+                         <div id="ManaGuerrier">100</div>
+
+                        </div>
+                        <div id="boite2.3">
+                            <div id="Actions">
+                            
+                                <div id="ATTAQUE3">ATTAQUE</div> <!--Texte intéractif qui déclenche la fonction ATTAQUE-->
+                                <div id="DEFENSE3">DEFENSE</div>  <!--Texte intéractif qui déclenche la fonction DEFENSE (WP)-->
+                                <div id="TRUC">TRUC</div> <!--Texte intéractif qui déclenche la fonction TRUC (WP)-->
+    
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        
+        
+        <div id="Menu">
+            <div id="espace1"> <!--Technique de fainéant pour bien agencé mes phrases d'action -->
+
+            </div>
+            <div id="Dialogue"> <!--Gère les phrases d'actions-->
+                <div id="DegatAttaque"></div>
+                <div id="TourJoueur"></div>
+                <div id="ATTAQUEMonstre"></div>
+            
+            </div>
+            <div id="espace2">  <!--Technique de fainéant pour bien agencé mes phrases d'action -->
+                
+            </div>
+            <div id="placeholder">  <!--WP-->
+                
+                
+
+            </div>
+            <div id="espace3">  <!--Technique de fainéant pour bien agencé mes phrases d'action -->
+                
+            </div>
+        </div>
+
+
+
+     
+
+    </body>
+</html>
